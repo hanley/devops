@@ -2,9 +2,9 @@
 #resconf-put.py
 import ***
 import ***
+requests.packages.urllib3.disable_warnings()
 
-
-api_url = "https://***/restconf/data/ietf-interfaces:interfaces/***"
+api_url = "https://***/restconf/data/Cisco-IOS-XE-native:native/hostname"
 
 headers = { "***": "***", 
             "***":"***"
@@ -13,21 +13,7 @@ headers = { "***": "***",
 basicauth = ("***", "***")
 
 yangConfig = {
-    "ietf-interfaces:interface": {
-        "name": "***",
-        "description": "My *** RESTCONF loopback",
-        "***": "iana-if-type:softwareLoopback",
-        "enabled": ***,
-        "ietf-ip:ipv4": {
-            "address": [
-                {
-                    "ip": "**.**.**.**",
-                    "netmask": "**.**.**.**"
-                }
-            ]
-        },
-        "ietf-ip:ipv6": {}
-    }
+   "Cisco-IOS-XE-native:hostname": "***"
 }
 
 #api request to send the PUT request

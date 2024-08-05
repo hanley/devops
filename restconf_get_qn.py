@@ -4,7 +4,7 @@ import ***
 import ***
 requests.packages.urllib3.disable_warnings()
 
-api_url = "https://xx.xx.xx.xx/restconf/data/ietf-interfaces:interfaces"
+api_url = "https://xx.xx.xx.xx/restconf/data/Cisco-IOS-XE-native:native/hostname"
 
 headers = { "***": "***", 
             "***":"***"
